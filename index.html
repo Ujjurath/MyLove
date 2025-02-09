@@ -73,12 +73,24 @@
   </div>
 
   <div class="gallery">
-    <img src="photo1.jpg" alt="Our Photo 1">
+    <img src="IMG_20201110_074636.jpg" alt="Our Photo 1">
     <img src="photo2.jpg" alt="Our Photo 2">
     <img src="photo3.jpg" alt="Our Photo 3">
     <!-- Add more images here -->
   </div>
-
+<div id="flipbook">
+  <div><img src="IMG_20201110_074636.jpg" alt="Our Photo 1"></div>
+  <div><img src="photo2.jpg" alt="Our Photo 2"></div>
+  <div><img src="photo3.jpg" alt="Our Photo 3"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.1/turn.min.js"></script>
+<script>
+  $("#flipbook").turn({
+    width: 600,
+    height: 400,
+    autoCenter: true,
+  });
+</script>
   <footer>
     <p>Made with ❤️ by Your Boyfie</p>
   </footer>
